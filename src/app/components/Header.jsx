@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-export default function Header() {
+export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -12,7 +12,7 @@ export default function Header() {
   };
 
   return (
-    <div className="max-w-full h-16 font-semi-bold text-green-950 flex items-center justify-between px-4 md:px-10">
+    <div className="max-w-full h-16 font-semibold text-green-950 flex items-center justify-between px-4 md:px-10 bg-red-50 shadow-md relative z-20">
       <Link href="/">
         <p className="text-3xl p-3 cursor-pointer">Baggy</p>
       </Link>
@@ -37,7 +37,9 @@ export default function Header() {
       </div>
 
       {isOpen && (
-        <div className="text-red-950 fixed top-16 left-0 w-full bg-gray-250 flex flex-col items-center py-4 shadow-lg space-y-4">
+        <div
+          className="text-red-950 top-16 left-0 w-full bg-red-50 flex flex-col items-center py-4 shadow-lg space-y-4 fixed z-50"
+        >
           <Link href="/Products" onClick={toggleMenu}>
             <p className="hover:underline cursor-pointer">Products</p>
           </Link>
