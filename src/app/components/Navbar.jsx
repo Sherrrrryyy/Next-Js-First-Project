@@ -33,7 +33,7 @@ export default function Navbar() {
         </Link>
       </ul>
 
-      <div className='flex gap-10'> 
+      <div className='flex gap-10'>
         <i className="fa-solid fa-magnifying-glass"></i>
         <i className="fa-regular fa-user"></i>
         <i className="fa-solid fa-cart-shopping"></i>
