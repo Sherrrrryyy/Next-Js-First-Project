@@ -4,6 +4,7 @@ import HeroBanner from './components/HeroBanner'
 import './page.css'
 import ProductCollection from './components/ProductCollection'
 import NewArrivals from './components/NewArrivals'
+import Footer from './components/Footer'
 
 const page = () => {
   const products = [
@@ -41,16 +42,13 @@ const page = () => {
           </div>
         </div>
 
-
         <div className='flex justify-center items-center'>
-                <div className='border border-black m-10 w-20'></div>
-                <h1 className='text-3xl font-bold'>New Arrivals</h1>
-                <div className='border border-black m-10 w-20'></div>
-            </div>
-
-
-<NewArrivals />
-
+          <div className='border border-black m-10 w-20'></div>
+          <h1 className='text-3xl font-bold'>New Arrivals</h1>
+          <div className='border border-black m-10 w-20'></div>
+        </div>
+        <NewArrivals />
+        <Footer />
       </div>
     </>
   )
