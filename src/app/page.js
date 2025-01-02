@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import HeroBanner from './components/HeroBanner'
 import './page.css'
 import ProductCollection from './components/ProductCollection'
+import NewArrivals from './components/NewArrivals'
 
 const page = () => {
   const products = [
@@ -26,7 +27,7 @@ const page = () => {
           <div className='border border-black m-10 w-20'></div>
         </div>
 
-        <div className="min-h-screen bg-gray-100 p-8">
+        <div className="min-h-screen p-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map((product) => (
               <ProductCollection
@@ -40,6 +41,15 @@ const page = () => {
           </div>
         </div>
 
+
+        <div className='flex justify-center items-center'>
+                <div className='border border-black m-10 w-20'></div>
+                <h1 className='text-3xl font-bold'>New Arrivals</h1>
+                <div className='border border-black m-10 w-20'></div>
+            </div>
+
+
+<NewArrivals />
 
       </div>
     </>

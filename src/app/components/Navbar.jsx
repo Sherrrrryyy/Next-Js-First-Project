@@ -14,7 +14,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="max-w-full h-16 font-semibold text-green-950 border-black flex items-center justify-around px-4 md:px-10 shadow-md relative z-20">
+    <div className="sticky top-0 max-w-full h-16 font-semibold text-green-950 border-black flex items-center justify-around px-4 md:px-10 shadow-md bg-white z-20">
       <Link href="/">
         <p className="text-3xl p-3 cursor-pointer">Baggy</p>
       </Link>
